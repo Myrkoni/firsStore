@@ -1,7 +1,7 @@
 // src/pages/Cart/Cart.jsx
 
 import { useNavigate } from "react-router-dom";
-import { useAuthContext } from "../../contexts/authContext";
+import { useAuthContext } from "../../contexts/AuthContext";
 import useCart from "../../hooks/useCart";
 import useCartProducts from "../../hooks/useCartProdunts";
 import styles from "./Cart.module.css";

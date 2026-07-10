@@ -4,7 +4,7 @@ import styles from "./Header.module.css";
 
 import { useGetAllProducts } from "../../hooks/useProducts";
 import useCartProducts from "../../hooks/useCartProdunts";
-import { useAuthContext } from "../../contexts/authContext";
+import { useAuthContext } from "../../contexts/AuthContext";
 import { useAllProducts } from "../../hooks/useProductsSupa";
 
 

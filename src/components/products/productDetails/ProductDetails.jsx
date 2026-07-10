@@ -2,7 +2,7 @@ import { useLocation, useNavigate, useParams } from "react-router-dom";
 import styles from "./ProductDetails.module.css";
 import { useGetOneProduct } from "../../../hooks/useProducts";
 import useCart from "../../../hooks/useCart";
-import { useAuthContext } from "../../../contexts/authContext";
+import { useAuthContext } from "../../../contexts/AuthContext";
 import productsAPI from "../../../api/products-api";
 import { oneProduct } from "../../../hooks/useProductsSupa";
 

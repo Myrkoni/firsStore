@@ -1,4 +1,4 @@
-import { useAuthContext } from "../../../contexts/authContext";
+import { useAuthContext } from "../../../contexts/AuthContext";
 import styles from "./Profile.module.css";
 
 

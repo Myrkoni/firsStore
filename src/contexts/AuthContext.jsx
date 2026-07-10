@@ -14,7 +14,6 @@ export const AuthContext = createContext({
 
 export function AuthContextProvider(props) {
 
-    // const [authState, setAuthState] = useState({});
     const [authState, setAuthState] = usePersistedState('auth', {});
 
     const changeAutState = (state) => {

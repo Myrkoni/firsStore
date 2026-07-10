@@ -1,0 +1,170 @@
+.page {
+  min-height: 100vh;
+  background: #020617;
+  color: white;
+
+  padding: 140px 80px 80px;
+}
+
+/* MAIN LAYOUT */
+
+.container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 40px;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+  background: #0f172a;
+
+  border-radius: 24px;
+
+  padding: 30px;
+
+  border: 1px solid rgba(255,255,255,0.06);
+
+  height: fit-content;
+}
+
+.userBox {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+
+  margin: 0 auto 15px;
+
+  border-radius: 50%;
+
+  background: #2563eb;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.userBox h3 {
+  margin-bottom: 5px;
+}
+
+.userBox p {
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+/* MENU */
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.menu button {
+  padding: 12px;
+
+  background: #020617;
+  color: white;
+
+  border: 1px solid rgba(255,255,255,0.06);
+
+  border-radius: 14px;
+
+  cursor: pointer;
+
+  text-align: left;
+
+  transition: 0.2s;
+}
+
+.menu button:hover {
+  background: #1e293b;
+}
+
+.logout {
+  margin-top: 10px;
+  background: #7f1d1d !important;
+}
+
+.logout:hover {
+  background: #dc2626 !important;
+}
+
+/* CONTENT */
+
+.content {
+  background: #0f172a;
+
+  border-radius: 24px;
+
+  padding: 30px;
+
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.content h1 {
+  margin-bottom: 25px;
+}
+
+/* ORDERS */
+
+.orders {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.orderCard {
+  background: #020617;
+
+  padding: 20px;
+
+  border-radius: 18px;
+
+  border: 1px solid rgba(255,255,255,0.06);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  transition: 0.2s;
+}
+
+.orderCard:hover {
+  border-color: #2563eb;
+  transform: translateY(-3px);
+}
+
+.orderCard h3 {
+  font-size: 1rem;
+}
+
+.orderCard p {
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+.orderCard span {
+  color: #3b82f6;
+  font-weight: bold;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .page {
+    padding: 140px 25px 60px;
+  }
+}

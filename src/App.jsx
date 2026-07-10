@@ -11,10 +11,10 @@ import Register from './components/Users/register/Register'
 import ScrollToTop from './utils/scrollToTop'
 import { CartProvider } from './contexts/CartContext'
 import Profile from './components/Users/profile/Profile'
-import { AuthContextProvider } from './contexts/authContext'
 import Logout from './components/Users/logout/Logout'
 import CreateProduct from './components/products/createProduct/CreateProduct'
 import EditProduct from './components/products/productEdit/EditProduct'
+import { AuthContextProvider } from './contexts/AuthContext'
 
 function App() {
 

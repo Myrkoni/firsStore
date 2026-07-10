@@ -1,0 +1,159 @@
+.page {
+  min-height: 100vh;
+  background: #020617;
+
+  padding: 120px 60px;
+
+  color: white;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 50px;
+
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* IMAGE */
+
+.imageBox {
+  background: #0f172a;
+
+  border-radius: 24px;
+
+  padding: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageBox img {
+  width: 100%;
+  max-height: 450px;
+
+  object-fit: contain;
+}
+
+/* INFO */
+
+.info h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 1.6rem;
+  color: #3b82f6;
+
+  margin-bottom: 20px;
+}
+
+.desc {
+  color: #94a3b8;
+  line-height: 1.6;
+
+  margin-bottom: 25px;
+}
+
+/* SPECS */
+
+.specs {
+  background: #0f172a;
+
+  padding: 20px;
+
+  border-radius: 18px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  margin-bottom: 25px;
+}
+
+.specs div {
+  display: flex;
+  justify-content: space-between;
+
+  color: #cbd5e1;
+}
+
+.specs span {
+  color: white;
+}
+
+/* BUTTONS */
+
+.actions {
+  display: flex;
+  gap: 15px;
+}
+
+.add,
+.buy,
+.edit,
+.delete {
+  flex: 1;
+
+  padding: 14px;
+
+  border-radius: 14px;
+
+  border: none;
+
+  cursor: pointer;
+
+  font-weight: 600;
+}
+
+.add {
+  background: #2563eb;
+  color: white;
+}
+
+.add:hover {
+  background: #1d4ed8;
+}
+
+.buy {
+  background: #0f172a;
+  color: white;
+
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .page {
+    padding: 120px 20px;
+  }
+}
+
+.edit {
+  background: #2563eb;
+  color: white;
+  margin-top: 20px;
+}
+
+.edit:hover {
+  background: #1d4ed8;
+}
+
+.delete {
+  background: #8a1111;
+  color: white;
+  margin-top: 20px;
+}
+
+.delete:hover {
+  background: #5c0c0c;
+}

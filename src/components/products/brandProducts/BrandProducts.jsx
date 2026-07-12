@@ -3,6 +3,7 @@ import styles from "./BrandProducts.module.css";
 
 import { Link, useLocation, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+
 import useLastPath from "../../../hooks/useLastPath";
 import { useAllProducts } from "../../../hooks/useProductsSupa";
 

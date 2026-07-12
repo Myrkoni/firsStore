@@ -1,7 +1,6 @@
 import { useNavigate, useParams } from "react-router-dom";
 import { useForm } from "../../../hooks/useForm";
 import styles from "./EditProduct.module.css";
-import { useGetOneProduct } from "../../../hooks/useProducts";
 import productsAPI from "../../../api/products-api";
 
 
@@ -9,7 +8,7 @@ export default function EditProduct() {
 
     const navigate = useNavigate();
     const { category, productId } = useParams();
-    const [oneProduct, setOneProduct] = useGetOneProduct(category, productId);
+    // const [oneProduct, setOneProduct] = useGetOneProduct(category, productId);
     const data = useParams()
 
     const {

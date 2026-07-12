@@ -1,6 +1,7 @@
 import { useLocation, useNavigate, useParams } from "react-router-dom";
+
 import styles from "./ProductDetails.module.css";
-import { useGetOneProduct } from "../../../hooks/useProducts";
+
 import useCart from "../../../hooks/useCart";
 import { useAuthContext } from "../../../contexts/AuthContext";
 import productsAPI from "../../../api/products-api";
@@ -12,7 +13,6 @@ export default function ProductDetails() {
     const { category, productName, productId } = useParams();
     const titel = productName ? productName : category;
     const { cart, dispatch } = useCart();
-    // const [product, setProduct] = useGetOneProduct(titel, productId)
     const [product] = oneProduct(titel, productId)
     const { fullName, isAuthenticated } = useAuthContext()
     const location = useLocation();

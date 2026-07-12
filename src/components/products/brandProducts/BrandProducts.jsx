@@ -1,7 +1,6 @@
 // src/pages/BrandProducts/BrandProducts.jsx
 import styles from "./BrandProducts.module.css";
 
-import { useGetAllProducts } from "../../../hooks/useProducts";
 import { Link, useLocation, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import useLastPath from "../../../hooks/useLastPath";
@@ -20,7 +19,7 @@ export default function BrandProducts() {
 
   const { category, productName } = useParams()
   const [products, setProducts] = useAllProducts(productName || category, sortType);
-  const [currentProducts] = useGetAllProducts(productName);
+  const [currentProducts] = useAllProducts(productName);
   const [setPath] = useLastPath()
   const location = useLocation();
 

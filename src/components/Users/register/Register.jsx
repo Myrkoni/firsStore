@@ -6,7 +6,7 @@ import { useRegister } from "../../../hooks/useAuth";
 import { useForm } from "../../../hooks/useForm";
 
 
-const initialValues = { fullName: '', email: '', password: '', 'confirm-password': '' };
+const initialValues = { email: '', password: '', 'confirm-password': '' };
 
 export default function Register() {
     const [error, setError] = useState('');
@@ -19,7 +19,7 @@ export default function Register() {
         }
 
         try {
-            await register(values.email, values.password, values.fullName);
+            await register(values.email, values.password);
             navigate('/');
         } catch (err) {
             setError(err.message);
@@ -48,14 +48,6 @@ export default function Register() {
                 <div className={styles.right}>
                     <h2>Регистрация</h2>
 
-                    <input
-                        type="text"
-                        placeholder="Име"
-                        name="fullName"
-                        id="fullName"
-                        value={values.fullName}
-                        onChange={changeHandler}
-                    />
                     <input
                         type="email"
                         placeholder="Имейл"
